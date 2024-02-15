@@ -14,14 +14,14 @@ function App() {
       embedConfig={{
         type: 'report',   // Supported types: report, dashboard, tile, visual, qna, paginated report and create
         id:"519c9242-710e-481e-b1d5-70c834b4cc68",
-     embedUrl: "https://app.powerbi.com/reportEmbed?reportId=519c9242-710e-481e-b1d5-70c834b4cc68&groupId=d4cbbf8a-c53d-44b0-b984-19ca93141c9c&w=2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsidXNhZ2VNZXRyaWNzVk5leHQiOnRydWUsImRpc2FibGVBbmd1bGFySlNCb290c3RyYXBSZXBvcnRFbWJlZCI6dHJ1ZX19",
-        accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtXYmthYTZxczh3c1RuQndpaU5ZT2hIYm5BdyIsImtpZCI6ImtXYmthYTZxczh3c1RuQndpaU5ZT2hIYm5BdyJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDJhZjk5YzYtNWE5Ni00ZDRkLWFmNDgtMzMxN2RhYzg4ZGIwLyIsImlhdCI6MTcwNzk5MjM4NSwibmJmIjoxNzA3OTkyMzg1LCJleHAiOjE3MDc5OTc3NTUsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVFFBeS84V0FBQUE4NkZOSVg2R29zRHlDbkYrTk1pcjNwbUY3Q215NlJMSzloUTB1cWNDb3hhRnJxWGYwWDBhdnNmZ2plTVVNSGlwIiwiYW1yIjpbInB3ZCJdLCJhcHBpZCI6Ijg3MWMwMTBmLTVlNjEtNGZiMS04M2FjLTk4NjEwYTdlOTExMCIsImFwcGlkYWNyIjoiMCIsImZhbWlseV9uYW1lIjoiRW11bHUiLCJnaXZlbl9uYW1lIjoiS2VpdGgiLCJpcGFkZHIiOiIxMDUuMjEuNjQuNzgiLCJuYW1lIjoiS2VpdGggRW11bHUiLCJvaWQiOiIyYjYwN2JlZS1iYWYxLTQ1YmQtODdjMC1lZDUxNjVkMWFjNzYiLCJwdWlkIjoiMTAwMzIwMDM0M0Y1NUZEMCIsInJoIjoiMC5BWUlBeHBtdlFwWmFUVTJ2U0RNWDJzaU5zQWtBQUFBQUFBQUF3QUFBQUFBQUFBQ0NBREEuIiwic2NwIjoidXNlcl9pbXBlcnNvbmF0aW9uIiwic2lnbmluX3N0YXRlIjpbImttc2kiXSwic3ViIjoiYmdEYW1JNi1aMGFIWVpuODZac2pCWFd2b0VHMENORnZVa3RQZnRFN2Y2QSIsInRpZCI6IjQyYWY5OWM2LTVhOTYtNGQ0ZC1hZjQ4LTMzMTdkYWM4OGRiMCIsInVuaXF1ZV9uYW1lIjoia2VpdGhlQGxhYm9yZW11cy51ZyIsInVwbiI6ImtlaXRoZUBsYWJvcmVtdXMudWciLCJ1dGkiOiJHRXpNcFQ0SVlraVdMMGc3YWJ4dEFBIiwidmVyIjoiMS4wIiwid2lkcyI6WyJiNzlmYmY0ZC0zZWY5LTQ2ODktODE0My03NmIxOTRlODU1MDkiXX0.BuZMVytnyAa0gyn_vVhsHeZLQJso816vswvt-TTyk3zhtWF5ridONOMK9gqji3UPj1r5SDPPIHBTLdp51OyTz0EKQnQnjGPPKBoJTFihq6fKEKALrAjPLBK8LUvuWxTENA_KohOEy4jSeqXfH4HW4x-9v7Aj1xyf4tchDbOs6iivucuauMU2wHBHKlTiiWXcK0doCzoSnfR-UGRQChUebD4Jzykzv4Bce0Y8ZLcyDvn9QJEzyLvsF0tZxQnFRDe81KhPeE57YTedsOIasdMSAaA7BG-dFAwW-OzSOIS3OmpM9-NuMBIX_Mr9AjZc2sxThd3GtP0lnOg_taEJkapitg',
+     embedUrl: "https://app.powerbi.com/reportEmbed?reportId=3a9dc67d-9a95-4213-ba05-c1b21993ca4c&groupId=d4cbbf8a-c53d-44b0-b984-19ca93141c9c&w=2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsidXNhZ2VNZXRyaWNzVk5leHQiOnRydWUsImRpc2FibGVBbmd1bGFySlNCb290c3RyYXBSZXBvcnRFbWJlZCI6dHJ1ZX19",
+        accessToken: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImtXYmthYTZxczh3c1RuQndpaU5ZT2hIYm5BdyIsImtpZCI6ImtXYmthYTZxczh3c1RuQndpaU5ZT2hIYm5BdyJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNDJhZjk5YzYtNWE5Ni00ZDRkLWFmNDgtMzMxN2RhYzg4ZGIwLyIsImlhdCI6MTcwNzkwNTE5OCwibmJmIjoxNzA3OTA1MTk4LCJleHAiOjE3MDc5MDkwOTgsImFpbyI6IkUyTmdZQ2p5bkxTYWUyT2gwUUplenl1aC9jSXFBQT09IiwiYXBwaWQiOiIyODg3NDZhMS1kZWVkLTRjYTEtODA3OC1kMjQ4MzRhNWJjZGMiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC80MmFmOTljNi01YTk2LTRkNGQtYWY0OC0zMzE3ZGFjODhkYjAvIiwiaWR0eXAiOiJhcHAiLCJvaWQiOiJhOGU2YWM5Yi0wMzJjLTRiMDYtOTFiZC1mYWFjYTJjODAyYmEiLCJyaCI6IjAuQVlJQXhwbXZRcFphVFUydlNETVgyc2lOc0FrQUFBQUFBQUFBd0FBQUFBQUFBQUNDQUFBLiIsInN1YiI6ImE4ZTZhYzliLTAzMmMtNGIwNi05MWJkLWZhYWNhMmM4MDJiYSIsInRpZCI6IjQyYWY5OWM2LTVhOTYtNGQ0ZC1hZjQ4LTMzMTdkYWM4OGRiMCIsInV0aSI6Il9oUUVldzItTEUtMDNDS1dSSzlJQUEiLCJ2ZXIiOiIxLjAifQ.I5_oZ6OSH3W28N1Wq5d3luI0MGPi09JhffpK_lg7AtKwtWGt9HOQV_w65i9lZdnBRDMPrIloSzMp3tQXDqaUh2sToCLE8EiwRlXfVv8xY0iz0RhYyjkAxjNcGII86Nh_I4ub63HgnidHLY5B8xdF4UoE-NooAFEYjtJ73xmW8mNizfwBO_YbcsloCCn6CHaNZET0htX6MGtXDKsCuDAqZc0ivC3vZNMGnbpKq8wd3FuuTwa4DtLzDCN-kDJCINZLBlJ1xEDGuRdUtZzAga2SZ0mAr1FaAz-ZALzn4eZPtKV_YiSn2uUI64ItMHZCBZSZkyMTdrHnffMHV2slfIOXIg',
         tokenType: models.TokenType.Aad, // Use models.TokenType.Aad for SaaS embed
         settings: {
           panes: {
             filters: {
               expanded: false,
-              visible: true
+              visible: false
             }
           },
           background: models.BackgroundType.Transparent,
@@ -38,7 +38,7 @@ function App() {
         ])
       }
 
-      cssClassName={"bi-embedded"}
+      cssClassName={"reportClass"}
 
       getEmbeddedComponent={(embeddedReport) => {
         window.report = embeddedReport;
