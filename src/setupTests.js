@@ -1,8 +1,15 @@
-// Mock window.crypto
-const mockGetRandomValues = jest.fn().mockReturnValue(new Uint8Array(1));
-global.crypto = {
-  getRandomValues: mockGetRandomValues
+// Mock the window object to handle the getEmbeddedComponent callback
+global.window = {
+  report: null, // Initialize as needed
 };
 
-// Use React Testing Library (RTL) instead of Enzyme
-import '@testing-library/jest-dom'; // Import RTL's jest-dom matchers
+// Mock the crypto object for handling random values
+global.crypto = {
+  getRandomValues: jest.fn().mockImplementation(buffer => {
+    // Fill the buffer with a fixed value for testing purposes
+    for (let i = 0; i < buffer.length; i++) {
+      buffer[i] = 0; // Replace with the desired fixed value
+    }
+    return buffer;
+  })
+};

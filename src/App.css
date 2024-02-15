@@ -1,8 +1,17 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: inline !important;
+}
+
+.bi-embedded{
+  height: 100dvh;
+  width: 100dvw;
+  position:fixed;
 }
 
 .logo {
