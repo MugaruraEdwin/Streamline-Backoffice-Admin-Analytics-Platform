@@ -3,7 +3,7 @@ body{
 }
 .container{
     margin-top: 100px;
-    background-color: #fff;
+    background-color: #F5F5F5;
     /* background-color: #395464; */
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -63,8 +63,11 @@ h2{
 }
 p a{
     text-decoration: none;
-    color: #8fcbf3;
+    color: #007bff;
     margin-top: 10px;
+}
+p a:hover{
+    color: #0056b3;
 }
 #g-1{
     color: #4285F4;
@@ -88,6 +91,7 @@ p a{
     color: #fff;
     font-size: 60px;
     font-weight: 500;
+    letter-spacing: 7px;
 }
 #para{
     font-size: 20px;
@@ -99,6 +103,7 @@ p a{
 }
 #para-0{
     font-weight: 500;
+    width: 650px;
    
 }
 .error {
@@ -106,3 +111,24 @@ p a{
     font-size: 0.8rem;
 }
 
+.btn-outline-custom {
+    color: #F4B400;
+    border-color: #F4B400;
+    background-color: #F5F5F5;
+}
+
+.btn-outline-custom:hover{
+    background-color:#F4B400 ;
+    color: #fff;
+}
+
+#forgotPassword{
+    font-size: 12px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#forgotPassword:hover{
+    font-size: 13px;
+    color: rgb(141, 48, 141);
+}

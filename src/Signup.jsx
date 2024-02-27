@@ -29,7 +29,7 @@ function Signup() {
             setPasswordError('Password is required');
             return;
         } else if (!passwordRegex.test(password)) {
-            setPasswordError('Password is weak. Please follow the NIST guidelines for password security.');
+            setPasswordError('Password is weak.');
             return;
         } else {
             setPasswordError('');
@@ -85,7 +85,7 @@ function Signup() {
         <div className="container">
             <div className="row" id="form-height">
                 <div className="col-sm-8 margin" id="back-img">
-                    <p id="para-0"><span id="smart">STREAMLINE Backoffice Analytics Admin Platform </span> Facilitates seamless back-office management, planning, and scheduling, ensuring the delivery of uncompromising quality, right on time.</p>
+                    <p id="para-0"><span id="smart">STREAMLINE BackOffice Admin Platform </span> Facilitates seamless back-office management, planning, and scheduling, ensuring the delivery of uncompromising quality, right on time.</p>
                 </div>
                 <div className="col-sm-4 margin">
                     <h2>Create an account</h2>
@@ -111,11 +111,11 @@ function Signup() {
                             <span className="error" id="passworderror">{passwordError}</span>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="confirmpassword">Confirm Password<span>*</span></label>
+                            <label htmlFor="confirmpassword">Confirm Password<span className="red">*</span></label>
                             <input type="password" className="form-control" id="confirmpassword" placeholder="Retype Password" name="confirmpassword" value={confirmpassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                             <span className="error" id="confirmpassworderror">{confirmPasswordError}</span>
                         </div>
-                        <button type="submit" className="btn btn-outline-warning form-width" id="submit" name="submit">Create Account</button>
+                        <button type="submit" className="btn btn-outline-custom form-width" id="submit" name="submit">Create Account</button>
                         {/* <button className="btn btn-light form-width google">Sign Up with <span id="g-1">G</span><span id="o-1">o</span><span id="o-2">o</span><span id="g-2">g</span><span id="l">l</span><span id="e">e</span></button> */}
                     </form>
                     <p className="account">Already have an account? <Link to="/">Login</Link></p>
@@ -126,3 +126,4 @@ function Signup() {
 }
 
 export default Signup;
+
