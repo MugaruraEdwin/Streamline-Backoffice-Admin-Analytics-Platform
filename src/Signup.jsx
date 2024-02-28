@@ -8,12 +8,14 @@ function Signup() {
     const [firstname, setFirstName] = useState('');
     const [lastname, setLastName] = useState('');
     const [email, setEmail] = useState('');
+    const [role, setRole] = useState('');
     const [password, setPassword] = useState('');
     const [confirmpassword, setConfirmPassword] = useState('');
     const [firstNameError, setFirstNameError] = useState('');
     const [lastNameError, setLastNameError] = useState('');
     const [emailError, setEmailError] = useState('');
     const [passwordError, setPasswordError] = useState('');
+    const [roleError, setRoleError] = useState(''); 
     const [confirmPasswordError, setConfirmPasswordError] = useState('');
     const navigate = useNavigate();
 
@@ -65,6 +67,13 @@ function Signup() {
             setEmailError('');
         }
 
+        if (role === '') {
+            setRoleError('Please select a role');
+            return;
+        } else {
+            setRoleError('');
+        }
+
         if (password !== confirmpassword) {
             setConfirmPasswordError('Passwords do not match');
             return;
@@ -73,7 +82,7 @@ function Signup() {
         }
 
         // If all validations pass, send the request
-        axios.post('http://localhost:3000/register', { firstname, lastname, email, password, confirmpassword })
+        axios.post('http://localhost:3000/register', { firstname, lastname, email, role, password, confirmpassword })
             .then(result => {
                 console.log(result);
                 navigate('/');
@@ -82,13 +91,13 @@ function Signup() {
     }
 
     return (
-        <div className="container">
+        <div className="container" id="signup_form">
             <div className="row" id="form-height">
                 <div className="col-sm-8 margin" id="back-img">
-                    <p id="para-0"><span id="smart">STREAMLINE BackOffice Admin Platform </span> Facilitates seamless back-office management, planning, and scheduling, ensuring the delivery of uncompromising quality, right on time.</p>
+                    <p id="para-0"><span id="smart">STREAMLINE BACKOFFICE </span> Facilitates seamless back-office management, planning, and scheduling, ensuring the delivery of uncompromising quality, right on time.</p>
                 </div>
                 <div className="col-sm-4 margin">
-                    <h2>Create an account</h2>
+                    {/* <h2>Create an account</h2> */}
                     <form name="signup_form" id="signup_form" onSubmit={handleSubmit}>
                         <div className="form-group">
                             <label htmlFor="firstname">First Name<span className="red">*</span></label>
@@ -106,6 +115,15 @@ function Signup() {
                             <span className="error" id="emailerror">{emailError}</span>
                         </div>
                         <div className="form-group">
+                            <label htmlFor="role">Role<span className="red">*</span></label>
+                            <select id="role" className="form-select" aria-label="Role" name="role" value={role} onChange={(e) => setRole(e.target.value)}>
+                                <option value="">Choose User Role ...</option>
+                                <option value="user">Operational User</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                            <span className="error" id="roleerror">{roleError}</span>
+                        </div>
+                        <div className="form-group">
                             <label htmlFor="password">Password<span className="red">*</span></label>
                             <input type="password" className="form-control" id="password" placeholder="Password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
                             <span className="error" id="passworderror">{passwordError}</span>
@@ -118,7 +136,7 @@ function Signup() {
                         <button type="submit" className="btn btn-outline-custom form-width" id="submit" name="submit">Create Account</button>
                         {/* <button className="btn btn-light form-width google">Sign Up with <span id="g-1">G</span><span id="o-1">o</span><span id="o-2">o</span><span id="g-2">g</span><span id="l">l</span><span id="e">e</span></button> */}
                     </form>
-                    <p className="account">Already have an account? <Link to="/">Login</Link></p>
+                    {/* <p className="account">Already have an account? <Link to="/">Login</Link></p> */}
                 </div>
             </div>
         </div>

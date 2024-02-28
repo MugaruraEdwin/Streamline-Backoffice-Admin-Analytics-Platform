@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import '../public/css/resetPassword.css';
 
 function ResetPassword() {
     const [email, setEmail] = useState("");
@@ -61,10 +62,10 @@ function ResetPassword() {
     }
     
     return (
-        <div className="container">
-            <div className="row justify-content-center mt-5">
+        <div className="container" id="cover">
+            <div id="content">
                 <div className="col-md-6">
-                    <h2 className="mb-4">Reset Password</h2>
+                    <h2>Reset Password</h2>
                     {success ? (
                         <div className="alert alert-success" role="alert">
                             Password reset successful. <Link to="/">Login</Link> with your new password.
@@ -84,7 +85,7 @@ function ResetPassword() {
                                 <label htmlFor="confirmPassword">Confirm Password</label>
                                 <input type="password" className="form-control" id="newConfirmPassword" value={newConfirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                             </div>
-                            <button type="submit" className="btn btn-primary">Reset Password</button>
+                            <button type="submit" className="btn btn-outline-custom ">Reset Password</button>
                             {error && <div className="alert alert-danger mt-3" role="alert">{error}</div>}
                         </form>
                     )}
