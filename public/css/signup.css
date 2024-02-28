@@ -1,44 +1,72 @@
 body{
-    background-color: #D8D8D8;
+    background-color: #000;
 }
 .container{
-    margin-top: 100px;
+    margin-top: 240px;
     background-color: #F5F5F5;
     /* background-color: #395464; */
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
-    border-radius: 15px;
-    margin-left: 190px;
-   
+    margin-left: 280px;
+    width: 900px;
 }
-
+/* #signup_form{
+    margin-top: 220px;
+} */
 #form-height{
-    height: 750px;
+    height: 350px;
 }
 .margin{
     padding: 20px;
+    background-color: #303030 ;
 }
 #back-img{
-    background-color: #161616 ;
+    background-color: #303030 ;
     background-size: cover;
-    color: #F0D442;
-    font-size: 25px;
+    color: #fff;
+    font-size: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius:15px;
-    line-height: 65px;
+    line-height: 35px;
     padding-top: 40px;
 }
+
+label{
+    color: white;
+    margin-top: 7px ;
+}
+
+input{
+    background-color: #959494 !important;
+    height: 40px;
+}
 h2{
-    margin-top: 20px;
     font-weight: 700px;
     font-weight: bold;
+    color: #dcd6d6;
 }
 #signup_form{
     font-weight: 200;
+    font-size: 12px;
+    margin-right: 20px;
+}
+#email{
+    margin-top: 3px;
+    font-size: 10px;
+}
+#password{
+    font-size: 10px;
+}
+#confirmpassword{
+    font-size: 10px;
+}
+#lastname{
+    font-size: 10px;
+}
+#firstname{
+    font-size: 10px;
 }
 
 .form-group{
@@ -49,7 +77,7 @@ h2{
     width: 100%;
 }
 .red{
-    color: red;
+    color: #fff;
     font-style: italic;
     font-size: 12px;
 }
@@ -88,10 +116,10 @@ p a:hover{
     color: red;
 }
 #smart{
-    color: #fff;
-    font-size: 60px;
+    color: #F0D442;
+    font-size: 20px;
     font-weight: 500;
-    letter-spacing: 7px;
+    letter-spacing: 10px;
 }
 #para{
     font-size: 20px;
@@ -103,11 +131,11 @@ p a:hover{
 }
 #para-0{
     font-weight: 500;
-    width: 650px;
+    width: 500px;
    
 }
 .error {
-    color: red;
+    color: #fff;
     font-size: 0.8rem;
 }
 
@@ -115,10 +143,12 @@ p a:hover{
     color: #F4B400;
     border-color: #F4B400;
     background-color: #F5F5F5;
+    height: 35px;
+    font-size: 12px;
 }
 
 .btn-outline-custom:hover{
-    background-color:#F4B400 ;
+    background-color: #fdc326 ;
     color: #fff;
 }
 
@@ -131,4 +161,16 @@ p a:hover{
 #forgotPassword:hover{
     font-size: 13px;
     color: rgb(141, 48, 141);
+}
+
+#title-1{
+    font-size: 15px;
+}
+
+select{
+    color: white;
+    margin-top: 7px ;
+    background-color: #959494 !important;
+    font-size: 11px !important;
+    height: 40px;
 }

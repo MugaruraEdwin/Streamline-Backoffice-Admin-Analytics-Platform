@@ -14,6 +14,11 @@ const EmployeeSchema = new mongoose.Schema({
         required:true,
         unique:true
     },
+    role:{
+        type:String,
+        required:true,
+        trim:true
+    },
     password:{
         type:String,
         required:true,

@@ -11,21 +11,39 @@ const port = 3000;
 
 mongoose.connect("mongodb://127.0.0.1:27017/streamlinebackofficeanalyticsadmin");
 
-app.post("/login", (req,res)=> {
-    const {email,password} = req.body;
-    EmployeeModel.findOne({email: email})
-    .then(user => {
-        if(user){
-            if(user.password === password){
-                res.json("Success")
-            }else {
-                res.json("Password is incorrect")
+// app.post("/login", (req,res)=> {
+//     const {email,password} = req.body;
+//     EmployeeModel.findOne({email: email})
+//     .then(user => {
+//         if(user){
+//             if(user.password === password){
+//                 res.json("Success")
+//             }else {
+//                 res.json("Password is incorrect")
+//             }
+//         }else {
+//             res.json("No record exists matching those credentials")
+//         }
+//     })
+// })
+
+app.post("/login", (req, res) => {
+    const { email, password } = req.body;
+    EmployeeModel.findOne({ email: email })
+        .then(user => {
+            if (user) {
+                if (user.password === password) {
+                    // Assuming user.role contains the role information
+                    res.json({ status: "Success", role: user.role });
+                } else {
+                    res.json("Password is incorrect");
+                }
+            } else {
+                res.json("No record exists matching those credentials");
             }
-        }else {
-            res.json("No record exists matching those credentials")
-        }
-    })
-})
+        })
+        .catch(err => console.log(err));
+});
 
 app.post("/forgot-password", (req, res) => {
     const { email } = req.body;
@@ -78,6 +96,7 @@ app.post("/reset-password", (req, res) => {
         res.status(500).json("An error occurred while processing your request.");
     });
 });
+
 
 
 app.listen(port,() => {
