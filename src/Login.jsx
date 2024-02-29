@@ -44,6 +44,7 @@ function Login() {
 
     return (
         <div className="container">
+            <div id="laboremus"><img id="laboremus_logo" src="../public/images/Laboremus_logo.png"></img></div>
             <div className="row" id="form-height">
                 <div className="col-sm-7 margin" id="back-img">
                     <p id="para-0"><span id="smart">STREAMLINE BACKOFFICE </span> Facilitates seamless back-office management, planning, and scheduling, ensuring the delivery of uncompromising quality, right on time.</p>

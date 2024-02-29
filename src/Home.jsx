@@ -62,40 +62,6 @@ function Home() {
     return minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
   }
   
-  //   return (
-  //     <>
-  //     {/* handle isIdle for the modal */}
-  //     {isIdle && showModal && (
-  //       <div className="modal">
-  //         <div className="modal-content">
-  //           <h2>Idle Timeout Warning</h2>
-  //           <p>You are about to be logged out due to inactivity.</p>
-  //           <br />
-  //           Time remaining: {millisToMinutesAndSeconds(remainingTime * 1000)}
-  //           <br />
-  //           <div className="row">
-  //           <button className="btn btn-danger" onClick={handleLogOut}>
-  //             Logout
-  //           </button>
-  //           <button className="btn btn-primary " onClick={handleStayLoggedIn}>
-  //             Stay Logged In
-  //           </button>
-  //           </div>
-
-  //         </div>
-  //       </div>
-  //     )}
-
-  //     <div>
-  //       <iframe title="STREAMLINE demo files (1)" width="1700" height="1080" src="https://app.powerbi.com/reportEmbed?reportId=519c9242-710e-481e-b1d5-70c834b4cc68&autoAuth=true&ctid=42af99c6-5a96-4d4d-af48-3317dac88db0" frameborder="0" allowFullScreen="true"></iframe>
-  //     </div>
-  //   </>
-  
-  //   )
-  // }
-  
-  // export default Home;
-
   return (
     <>
       {/* handle isIdle for the modal */}
