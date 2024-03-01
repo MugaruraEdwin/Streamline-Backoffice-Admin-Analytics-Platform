@@ -19,7 +19,7 @@ jobs:
             npm ci
       - name: Run tests
         run: npm test
-      - name: Deploy to azur
+      - name: Deploy to Azure App Service
         uses: azure/webapps-deploy@v2
         with:
           app-name: streamline-back-office
