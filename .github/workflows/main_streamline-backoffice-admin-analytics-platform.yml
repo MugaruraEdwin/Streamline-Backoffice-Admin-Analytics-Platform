@@ -25,9 +25,6 @@ jobs:
           npm run test --if-present
           # Other scripts if configured should be added here, such as linting, formatting
 
-      - name: List files in dist directory
-        run: ls -R dist
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
