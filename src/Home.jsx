@@ -2,9 +2,9 @@ import React,{ useState, useEffect } from 'react'
 import './App.css'
 import { PowerBIEmbed } from 'powerbi-client-react';
 import { models } from 'powerbi-client';
-import useIdle from './Hooks/useIdleTimer';
+import useIdle from '../Hooks/useIdleTimer';
 import { useNavigate } from 'react-router-dom';
-import '../public/css/modal.css';
+import '/css/modal.css';
 
 function Home() {
   const navigate = useNavigate();
