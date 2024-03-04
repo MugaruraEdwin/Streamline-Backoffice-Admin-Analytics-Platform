@@ -14,7 +14,7 @@ function Admin() {
             <Link to="/reset-password" className="btn btn-warning admin_buttons">Reset Password</Link>
             <br></br>
             {/* <button className="btn btn-primary admin_buttons" href="/register">Register User</button> */}
-            <Link to="/register" className="btn btn-warning admin_buttons">Reset Register User</Link>
+            <Link to="/register" className="btn btn-warning admin_buttons">Register User</Link>
         </div>    
     )
 }
