@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import '/css/resetPassword.css';
+import '../public/css/resetPassword.css';
 
 function ResetPassword() {
     const [email, setEmail] = useState("");
