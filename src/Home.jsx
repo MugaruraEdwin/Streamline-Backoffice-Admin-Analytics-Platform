@@ -17,7 +17,7 @@ function Home() {
     setRemainingTime(30); //set 15 seconds as time remaining
   };
 
-  const { isIdle } = useIdle({ onIdle: handleIdle, idleTime: 10});
+  const { isIdle } = useIdle({ onIdle: handleIdle, idleTime: 0.6});
 
   useEffect(() => {
     let interval;

@@ -151,6 +151,7 @@ p a:hover{
 .btn-outline-custom:hover{
     background-color: #fdc326 ;
     color: #fff;
+    font-weight: 500;
 }
 
 #forgotPassword{
