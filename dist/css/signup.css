@@ -1,10 +1,8 @@
-body{
+/* body{
     background-color: #000;
-}
+} */
 .container{
     margin-top: 240px;
-    background-color: #000;
-    /* background-color: #395464; */
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -20,12 +18,17 @@ body{
 }
 .margin{
     padding: 20px;
-    background-color: #303030 ;
+    background-color: #f4f2f2;
+    /* border: 2px groove #868686;
+    border-left: none; */
 }
 #back-img{
-    background-color: #303030 ;
+    /* background-color: #303030 ; */
+    /* border: 2px groove #868686;
+    border-right: none; */
     background-size: cover;
     color: #fff;
+    color: #595858;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -36,11 +39,14 @@ body{
 
 label{
     color: white;
+    color: #000;
+    font-weight: 400;
     margin-top: 7px ;
 }
 
 input{
     background-color: #959494 !important;
+    background-color: #fff !important;
     height: 40px;
 }
 h2{
@@ -118,6 +124,7 @@ p a:hover{
 }
 #smart{
     color: #F0D442;
+    color: #F4B400;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 10px;
@@ -137,7 +144,9 @@ p a:hover{
 }
 .error {
     color: #F0D442;
+    color: #F4B400;
     font-size: 0.7rem;
+    font-weight: bold;
 }
 
 .btn-outline-custom {
@@ -172,12 +181,11 @@ p a:hover{
 select{
     color: white;
     margin-top: 7px ;
-    background-color: #959494 !important;
+    /* background-color: #959494 !important; */
     font-size: 11px !important;
     height: 40px;
 }
 #laboremus_logo{
-    background-color: #000;
     height: 110px;
     margin-right: 100px;
 }
