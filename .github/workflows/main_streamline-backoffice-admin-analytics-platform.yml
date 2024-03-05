@@ -1,4 +1,4 @@
-name: Build and deploy Node.js app to Azure Web App - edwin-backoffice-app
+name: Build and deploy Node.js app to Azure Web App - streamline-admin-analytics-platform
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v3
@@ -32,7 +32,7 @@ jobs:
           path: dist # This should be your distribution path, not the root path
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -48,7 +48,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: edwin-backoffice-app
+          app-name: streamline-admin-analytics-platform
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
           package: .
