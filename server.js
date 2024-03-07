@@ -11,6 +11,9 @@ const port = 3000;
 
 mongoose.connect("mongodb+srv://Mugarura:Kristen12$@streamline-analytics.ayhamee.mongodb.net/");
 
+app.get("/testing", (req, res) => {
+    return res.status(200).json({message:"We are working!!"})
+})
 
 app.post("/login", (req, res) => {
     const { email, password } = req.body;
