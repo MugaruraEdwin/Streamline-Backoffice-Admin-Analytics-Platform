@@ -9,7 +9,8 @@ app.use(cors())
 
 const port = 3000;
 
-mongoose.connect("mongodb://127.0.0.1:27017/streamlinebackofficeanalyticsadmin");
+mongoose.connect("mongodb+srv://Mugarura:Kristen12$@streamline-analytics.ayhamee.mongodb.net/");
+
 
 // app.post("/login", (req,res)=> {
 //     const {email,password} = req.body;

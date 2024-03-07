@@ -37,11 +37,14 @@
     "react-scripts": "^5.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.0",
     "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
     "@babel/register": "^7.23.7",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react": "^4.2.1",
+    "babel-jest": "^29.7.0",
     "concurrently": "^8.2.2",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
