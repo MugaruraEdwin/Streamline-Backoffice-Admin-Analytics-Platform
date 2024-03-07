@@ -12,22 +12,6 @@ const port = 3000;
 mongoose.connect("mongodb+srv://Mugarura:Kristen12$@streamline-analytics.ayhamee.mongodb.net/");
 
 
-// app.post("/login", (req,res)=> {
-//     const {email,password} = req.body;
-//     EmployeeModel.findOne({email: email})
-//     .then(user => {
-//         if(user){
-//             if(user.password === password){
-//                 res.json("Success")
-//             }else {
-//                 res.json("Password is incorrect")
-//             }
-//         }else {
-//             res.json("No record exists matching those credentials")
-//         }
-//     })
-// })
-
 app.post("/login", (req, res) => {
     const { email, password } = req.body;
     EmployeeModel.findOne({ email: email })
