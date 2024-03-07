@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     axios
       .post(
-        'https://streamline-admin-analytics-platform.azurewebsites.net:3000/login',
+        'https://streamline-admin-analytics-platform.azurewebsites.net/login',
         { email, password }
       )
       .then((result) => {
@@ -34,7 +34,7 @@ function Login() {
   const handleForgotPassword = () => {
     axios
       .post(
-        'https://streamline-admin-analytics-platform.azurewebsites.net:3000/forgot-password',
+        'https://streamline-admin-analytics-platform.azurewebsites.net/forgot-password',
         { email }
       )
       .then((response) => {
