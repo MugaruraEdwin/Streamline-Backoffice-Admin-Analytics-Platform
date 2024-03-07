@@ -13,7 +13,7 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://streamline-admin-analytics-platform.azurewebsites.net/login', { email, password })
+        axios.post('http://127.0.0.1:3000/login', { email, password })
             .then(result => {
                 if (result.data.status === "Success") {
                     if (result.data.role === "admin") {
