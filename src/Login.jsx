@@ -29,7 +29,7 @@ function Login() {
     }
 
     const handleForgotPassword = () => {
-        axios.post('https://streamline-admin-analytics-platform.azurewebsites.net/forgot-password', { email })
+        axios.post('https://127.0.0.1:3000/forgot-password', { email })
             .then(response => {
                 if (response.data.success) {
                     // Redirect to a page to reset the password

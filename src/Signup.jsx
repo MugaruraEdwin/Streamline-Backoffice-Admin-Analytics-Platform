@@ -82,7 +82,7 @@ function Signup() {
         }
 
         // If all validations pass, send the request
-        axios.post('https://streamline-admin-analytics-platform.azurewebsites.net/register', { firstname, lastname, email, role, password, confirmpassword })
+        axios.post('http://127.0.0.1:3000/register', { firstname, lastname, email, role, password, confirmpassword })
             .then(result => {
                 console.log(result);
                 navigate('/');

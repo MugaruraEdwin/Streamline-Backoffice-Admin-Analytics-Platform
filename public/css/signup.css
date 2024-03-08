@@ -49,6 +49,7 @@ input{
     background-color: #fff !important;
     height: 40px;
 }
+
 h2{
     font-weight: 700px;
     font-weight: bold;
@@ -79,6 +80,7 @@ h2{
 .form-group{
     margin-top: 10px;
 }
+
 .form-width{
     margin-top: 40px;
     width: 100%;
