@@ -35,11 +35,11 @@ function ResetPassword() {
         }
 
         // Send email to check existence in the database
-        axios.post('http://127.0.0.1:3000/forgot-password', { email })
+        axios.post('https://modok-001.azurewebsites.net/forgot-password', { email })
             .then(response => {
                 if (response.data.success) {
                     // If email exists, proceed to reset password
-                    axios.post('http://127.0.0.1:3000/reset-password', { email, newPassword, newConfirmPassword})
+                    axios.post('https://modok-001.azurewebsites.net/reset-password', { email, newPassword, newConfirmPassword})
                         .then(response => {
                             if (response.data.success) {
                                 setSuccess(true); // Password reset successful
