@@ -146,10 +146,10 @@ p a:hover{
    
 }
 .error {
-    color: #F0D442;
-    color: #F4B400;
+    /* color: #F0D442; */
+    color: red;
     font-size: 0.7rem;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .btn-outline-custom {
