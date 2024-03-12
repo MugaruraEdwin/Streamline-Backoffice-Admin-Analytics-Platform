@@ -82,7 +82,7 @@ function Signup() {
         }
 
         // If all validations pass, send the request
-        axios.post('https://modok-001.azurewebsites.net/register', { firstname, lastname, email, role, password, confirmpassword })
+        axios.post('https://streamline-backend-004.azurewebsites.net/register', { firstname, lastname, email, role, password, confirmpassword })
             .then(result => {
                 console.log(result);
                 navigate('/');

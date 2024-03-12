@@ -35,11 +35,11 @@ function ResetPassword() {
         }
 
         // Send email to check existence in the database
-        axios.post('https://modok-001.azurewebsites.net/forgot-password', { email })
+        axios.post('https://streamline-backend-004.azurewebsites.net/forgot-password', { email })
             .then(response => {
                 if (response.data.success) {
                     // If email exists, proceed to reset password
-                    axios.post('https://modok-001.azurewebsites.net/reset-password', { email, newPassword, newConfirmPassword})
+                    axios.post('https://streamline-backend-004.azurewebsites.net/reset-password', { email, newPassword, newConfirmPassword})
                         .then(response => {
                             if (response.data.success) {
                                 setSuccess(true); // Password reset successful

@@ -13,7 +13,7 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('https://modok-001.azurewebsites.net/login', { email, password })
+        axios.post('https://streamline-backend-004.azurewebsites.net/login', { email, password })
             .then(result => {
                 if (result.data.status === "Success") {
                     if (result.data.role === "admin") {
@@ -29,7 +29,7 @@ function Login() {
     }
 
     const handleForgotPassword = () => {
-        axios.post('https://modok-001.azurewebsites.net/forgot-password', { email })
+        axios.post('https://streamline-backend-004.azurewebsites.net/forgot-password', { email })
             .then(response => {
                 if (response.data.success) {
                     // Redirect to a page to reset the password
