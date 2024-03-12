@@ -2,19 +2,19 @@
     background-color: #000;
 } */
 .container{
-    margin-top: 240px;
+    margin-top: 210px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 280px;
-    width: 900px;
+    margin-left: 300px;
+    width: 870px;
 }
 /* #signup_form{
     margin-top: 220px;
 } */
 #form-height{
-    height: 350px;
-    margin-top: 50px;
+    height: 300px;
+    margin-top: 30px;
 }
 .margin{
     padding: 20px;
@@ -28,13 +28,14 @@
     border-right: none; */
     background-size: cover;
     color: #fff;
-    color: #595858;
+    color: #737272;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     line-height: 35px;
     padding-top: 40px;
+
 }
 
 label{
@@ -42,6 +43,7 @@ label{
     color: #000;
     font-weight: 400;
     margin-top: 7px ;
+    font-size: 12px;
 }
 
 input{
@@ -86,7 +88,7 @@ h2{
     width: 100%;
 }
 .red{
-    color: #F4B400;
+    color: red;
     font-style: italic;
     font-size: 12px;
 }
@@ -127,10 +129,10 @@ p a:hover{
 #smart{
     color: #F0D442;
     color: #F4B400;
-    color: #000;
-    font-size: 20px;
+    color: #1c1c1c;
+    font-size: 22px;
     font-weight: 800;
-    letter-spacing: 10px;
+    letter-spacing: 9px;
 }
 #para{
     font-size: 20px;
@@ -142,13 +144,14 @@ p a:hover{
 }
 #para-0{
     font-weight: 500;
-    width: 500px;
+    width: 494px;
+    margin-right: 5px;
    
 }
 .error {
     /* color: #F0D442; */
     color: red;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: normal;
 }
 
@@ -189,11 +192,11 @@ select{
     height: 40px;
 }
 #laboremus_logo{
-    height: 110px;
-    margin-right: 100px;
+    height: 200px;
+    margin-right: 40px;
 }
 
 #laboremus{
-    margin-left: -250px;
-    margin-top: -220px;
+    margin-left: -290px;
+    margin-top: -240px;
 }
