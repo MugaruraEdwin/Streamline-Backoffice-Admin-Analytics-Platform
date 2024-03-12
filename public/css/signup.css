@@ -127,8 +127,9 @@ p a:hover{
 #smart{
     color: #F0D442;
     color: #F4B400;
+    color: #000;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 10px;
 }
 #para{
