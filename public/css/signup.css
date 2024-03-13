@@ -200,3 +200,17 @@ select{
     margin-left: -290px;
     margin-top: -240px;
 }
+
+#togglePassword{
+    background-color: #fff;
+    border-left:none;
+    color: #a1a1a1;
+    font-size: 9px;
+    height: 40px;
+    border-top-left-radius: 0;
+    border-color: #dee2e6;
+    border-bottom-left-radius: 0;
+}
+/* .login_password{
+    bo
+} */
