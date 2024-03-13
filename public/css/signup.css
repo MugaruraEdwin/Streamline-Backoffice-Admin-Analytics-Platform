@@ -15,11 +15,13 @@
 } */
 #form-height{
     height: 300px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .margin{
     padding: 20px;
     background-color: #f4f2f2;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
     /* border: 2px groove #868686;
     border-left: none; */
 }
@@ -37,7 +39,8 @@
     font-style: normal;
     line-height: 35px;
     padding-top: 40px;
-
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 
 label{
@@ -193,7 +196,7 @@ select{
     height: 40px;
 }
 #laboremus_logo{
-    height: 110px;
+    height: 100px;
     margin-right: 40px;
 }
 
