@@ -3,7 +3,8 @@
 } */
 .container{
     margin-top: 210px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Gotham Narrow";
     font-weight: 400;
     font-style: normal;
     margin-left: 300px;
@@ -30,7 +31,8 @@
     color: #fff;
     color: #737272;
     font-size: 15px;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Gotham Narrow";
     font-weight: 500;
     font-style: normal;
     line-height: 35px;
@@ -143,7 +145,7 @@ p a:hover{
     font-weight: 100;
 }
 #para-0{
-    font-weight: 500;
+    font-weight: 400;
     width: 494px;
     margin-right: 5px;
    
@@ -166,7 +168,6 @@ p a:hover{
 .btn-outline-custom:hover{
     background-color: #fdc326 ;
     color: #fff;
-    font-weight: 500;
 }
 
 #forgotPassword{
@@ -192,13 +193,13 @@ select{
     height: 40px;
 }
 #laboremus_logo{
-    height: 200px;
+    height: 110px;
     margin-right: 40px;
 }
 
 #laboremus{
-    margin-left: -290px;
-    margin-top: -240px;
+    margin-left: -280px;
+    margin-top: -190px;
 }
 
 #togglePassword{
