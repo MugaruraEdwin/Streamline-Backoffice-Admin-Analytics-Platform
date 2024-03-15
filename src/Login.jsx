@@ -78,7 +78,6 @@ function Login() {
                             <span className="error" id="emailerror">{error && error}</span> {/* Display error message */}
                         </div>
                         <button type="submit" className="btn btn-outline-custom form-width" id="submit" name="submit">Login</button>
-                        <button id="green"><a href="/test">Testing Suite</a></button>
                         {/* <button type="button" id="forgotPassword" className="btn btn-link" onClick={handleForgotPassword}>Forgot Password?</button> Forgot Password link/button */}
                     </form>
                     {/* <p className="account">Don't have an account? <Link to="/register">Signup</Link></p> */}

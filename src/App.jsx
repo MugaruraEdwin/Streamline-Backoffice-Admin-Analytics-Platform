@@ -9,7 +9,6 @@ import Signup from './Signup';
 import Login from './Login';
 import Admin from './Admin';
 import ResetPassword from './ResetPassword';
-import Test from './Test';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
  
 function App() {
@@ -22,7 +21,6 @@ function App() {
         <Route path='/home' element={<Home />}></Route>
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/admin" element={<Admin/>} />
-        <Route path="/test" element={<Test/>} />
       </Routes>
     </BrowserRouter>
   )
