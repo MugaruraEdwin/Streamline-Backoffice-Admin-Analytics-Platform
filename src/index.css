@@ -27,6 +27,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-size: 13px !important;
 }
 
 h1 {
