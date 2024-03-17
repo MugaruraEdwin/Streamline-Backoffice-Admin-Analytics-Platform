@@ -1,22 +1,76 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import '../public/css/resetPassword.css'
+import React from "react";
 import { Link } from "react-router-dom";
-
+import '../public/css/resetPassword.css'
+import '../public/css/site.css';
+import '../public/fonts/font-awesome/css/font-awesome.css';
+import '../public/fonts/open-sans/open-sans.css';
+import '../public/lib/inspinia/inspinia.css';
+import '../public/lib/inspinia/animate.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function Admin() {
-  
     return (
-        <div className="container" id="admin_cover">
-            <div>
-                <h2>Admin</h2>
+        <div className="gray-bg">
+            <div className="flex-column">
+                <div className="flex-row-30">
+                    <div className="flex-logo">
+                        <img src="/images/streamline-logo.svg" alt="Streamline Logo" />
+                    </div>
+                    <div className="flex-info">
+                        <img
+                            className="fav"
+                            src="/images/streamline-asterick.svg"
+                            alt="Streamline Asterisk"
+                        />
+                        <h2>
+                            Facilitates seamless back-office management, planning, and
+                            scheduling, ensuring the delivery of uncompromising quality, right
+                            on time.
+                        </h2>
+                    </div>
+                </div>
+
+                <div className="flex-row-70">
+                    <div className="middle-box loginscreen animated fadeInDown">
+                        <div className="signin-page">
+                            <div className="login-sub-heading">
+                                <h3 className="text-center title">STREAMLINE BACKOFFICE</h3>
+                                <p>Administrator options</p>
+                            </div>
+                            <div className="admin-buttons">
+                                <Link to="/reset-password" id="forgot-password" > => Reset Password</Link>
+                                <Link to="/register" id="forgot-password" >=> Register User</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="tagline m-b-sm">
+                        <div className="m-r-sm">
+                            <a
+                                href="https://www.laboremus.ug/products/identity-verification"
+                                className="tagline-links"
+                            >
+                                About
+                            </a>
+                            <a
+                                href="https://www.laboremus.ug/contact-us"
+                                className="tagline-links m-l-xs"
+                            >
+                                Support
+                            </a>
+                            <a
+                                href="https://www.laboremus.ug/legal"
+                                className="tagline-links m-l-xs"
+                            >
+                                Legal
+                            </a>
+                        </div>
+                        <div className="m-t-sm text-muted" id="tagline-text">
+                            <p>BackOffice by Laboremus Uganda Limited</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            {/* <button className="btn btn-primary admin_buttons" href="/reset-password">Reset Password</button> */}
-            <Link to="/reset-password" className="btn btn-warning admin_buttons">Reset Password</Link>
-            <br></br>
-            {/* <button className="btn btn-primary admin_buttons" href="/register">Register User</button> */}
-            <Link to="/register" className="btn btn-warning admin_buttons">Register User</Link>
-        </div>    
-    )
+        </div>
+    );
 }
 
 export default Admin;
