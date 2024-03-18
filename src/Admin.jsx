@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import '../public/css/resetPassword.css'
 import '../public/css/site.css';
 import '../public/fonts/font-awesome/css/font-awesome.css';
@@ -8,6 +9,13 @@ import '../public/lib/inspinia/inspinia.css';
 import '../public/lib/inspinia/animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function Admin() {
+
+    const navigate = useNavigate();
+
+    const handleResetPassword = () => {
+      navigate('/reset-password');
+    };
+  
     return (
         <div className="gray-bg">
             <div className="flex-column">
@@ -37,8 +45,8 @@ function Admin() {
                                 <p>Administrator options</p>
                             </div>
                             <div className="admin-buttons">
-                                <Link to="/reset-password" id="forgot-password" > => Reset Password</Link>
-                                <Link to="/register" id="forgot-password" >=> Register User</Link>
+                                <Link to="/register" className="btn btn-outline btn-link"  style={{ textDecoration: 'none' }}>Register User</Link>
+                                <Link to="/reset-password" className="btn btn-outline btn-link" style={{ textDecoration: 'none' }}>Reset Password</Link>
                             </div>
                         </div>
                     </div>

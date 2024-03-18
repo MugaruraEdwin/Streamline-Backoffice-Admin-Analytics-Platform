@@ -198,7 +198,7 @@ function Signup() {
                       value={email} // Added value and onChange handlers
                       onChange={(e) => setEmail(e.target.value)}
                     /> */}
-                    <select id="role" className="form-select" aria-label="Role" name="role" value={role} onChange={(e) => setRole(e.target.value)}>
+                    <select id="role" className="form-select" style={{height: '45px', backgroundColor: '#F9F9F9', border: '1px solid #C4C4C4', borderColor: '#F4F4F4', fontSize: '13px'}} aria-label="Role" name="role" value={role} onChange={(e) => setRole(e.target.value)}>
                         <option value="">Choose User Role ...</option>
                         <option value="user">Operational User</option>
                         <option value="admin">Admin</option>

@@ -17,7 +17,7 @@ function Home() {
     setRemainingTime(30); //set 15 seconds as time remaining
   };
 
-  const { isIdle } = useIdle({ onIdle: handleIdle, idleTime: 10});
+  const { isIdle } = useIdle({ onIdle: handleIdle, idleTime: 0.3});
 
   useEffect(() => {
     let interval;
@@ -87,10 +87,16 @@ function Home() {
       )}
 
       <div>
+        {/* <iframe title="STREAMLINE demo files (1)" width="1500" height="850" src="https://app.powerbi.com/reportEmbed?reportId=519c9242-710e-481e-b1d5-70c834b4cc68&autoAuth=true&ctid=42af99c6-5a96-4d4d-af48-3317dac88db0" frameborder="0" allowFullScreen="true"></iframe> */}
         <iframe title="STREAMLINE demo files (1)" width="1500" height="850" src="https://app.powerbi.com/reportEmbed?reportId=519c9242-710e-481e-b1d5-70c834b4cc68&autoAuth=true&ctid=42af99c6-5a96-4d4d-af48-3317dac88db0" frameborder="0" allowFullScreen="true"></iframe>
+        {/* <h2>
+        TESTING TIME 
+        <iframe title="STREAMLINE demo files (1)" width="1500" height="850" src="https://app.powerbi.com/reportEmbed?reportId=519c9242-710e-481e-b1d5-70c834b4cc68&autoAuth=true&ctid=42af99c6-5a96-4d4d-af48-3317dac88db0" frameborder="0" allowFullScreen="true"></iframe>
+        </h2> */}
       </div>
     </>
   );
 }
 
 export default Home;
+
