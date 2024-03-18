@@ -153,7 +153,7 @@ function Signup() {
                       value={firstname} // Added value and onChange handlers
                       onChange={(e) => setFirstName(e.target.value)}
                     />
-                    <span className="error" id="firstnameerror">{firstNameError}</span>
+                    {firstNameError && <span className="alert alert-danger mt-3" id="firstnameerror">{firstNameError}</span>}
                   </div>
                   <div className="form-group signin-form m-b-sm">
                     <label className="control-label" htmlFor="Lastname">
@@ -168,7 +168,7 @@ function Signup() {
                       value={lastname} // Added value and onChange handlers
                       onChange={(e) => setLastName(e.target.value)}
                     />
-                    <span className="error" id="lastnameerror">{lastNameError}</span>
+                    {lastNameError && <span  className="alert alert-danger mt-3" id="lastnameerror">{lastNameError}</span>}
                   </div>
                   <div className="form-group signin-form m-b-sm">
                     <label className="control-label" htmlFor="Username">
@@ -183,7 +183,7 @@ function Signup() {
                       value={email} // Added value and onChange handlers
                       onChange={(e) => setEmail(e.target.value)}
                     />
-                    <span className="error" id="emailerror">{emailError}</span>
+                    {emailError && <span  className="alert alert-danger mt-3" id="emailerror">{emailError}</span>}
                   </div>
                   <div className="form-group signin-form m-b-sm">
                     <label htmlFor="role" className="control-label">
@@ -203,7 +203,7 @@ function Signup() {
                         <option value="user">Operational User</option>
                         <option value="admin">Admin</option>
                     </select>
-                    <span className="error" id="roleerror">{roleError}</span>
+                    {roleError && <span  className="alert alert-danger mt-3" id="roleerror">{roleError}</span>}
                   </div>
                   <div className="form-group signin-form m-b-sm">
                     <label className="control-label" htmlFor="Password">
@@ -218,7 +218,7 @@ function Signup() {
                       value={password} // Added value and onChange handlers
                       onChange={(e) => setPassword(e.target.value)}
                     />
-                     <span className="error" id="passworderror">{passwordError}</span>
+                     {passwordError && <span  className="alert alert-danger mt-3" id="passworderror">{passwordError}</span>}
                   </div>
                   <div className="form-group signin-form m-b-sm">
                     <label className="control-label" htmlFor="confirmpassword">
@@ -233,7 +233,7 @@ function Signup() {
                       value={confirmpassword} // Added value and onChange handlers
                       onChange={(e) => setConfirmPassword(e.target.value)}
                     />
-                     <span className="error" id="confirmpassworderror">{confirmPasswordError}</span>
+                     {confirmPasswordError && <span  className="alert alert-danger mt-3" id="confirmpassworderror">{confirmPasswordError}</span>}
                   </div>
   
                   <div className="row m-t-lg last-item">

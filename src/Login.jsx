@@ -240,7 +240,7 @@ function Login() {
                     value={password} // Added value and onChange handlers
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <span className="error" id="emailerror">{error && error}</span> {/* Display error message */}
+                  {error && <div className="alert alert-danger mt-3" role="alert">{error}</div>}
                 </div>
 
                 <div className="row m-t-lg last-item">
