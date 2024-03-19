@@ -122,7 +122,7 @@ function Login() {
           <div className="middle-box loginscreen animated fadeInDown">
             <div className="signin-page">
               <div className="login-sub-heading">
-                <h3 className="text-center title">STREAMLINE BACKOFFICE</h3>
+                <h3 className="text-center title">Streamline BackOffice</h3>
                 <p>Enter your credentials to access Streamline BackOffice</p>
               </div>
               {/* <form
